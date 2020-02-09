@@ -1,0 +1,53 @@
+@import "transitions";
+
+.full-width {
+  width: 100%;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.container {
+  & > div {
+    width: 100%;
+  }
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.no-pointer-events {
+  pointer-events: none !important;
+  & * {
+    pointer-events: none !important;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.full-size {
+  height: 100%;
+  width: 100%;
+}
+
+.gradient {
+  background: #cc2b5e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #753a88,
+    #cc2b5e
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #753a88,
+    #cc2b5e
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+input[type="file"] {
+  display: none;
+}

@@ -28,14 +28,9 @@
                 <v-list-item-avatar :size="40">
                   <Avatar :item="item" :size="40" />
                 </v-list-item-avatar>
-                <v-list-item-content>
-                  <v-list-item-title>
-                    {{ item.nickname }}
-                  </v-list-item-title>
-                  <v-list-item-subtitle>
-                    {{ item.realname }}
-                  </v-list-item-subtitle>
-                </v-list-item-content>
+                <v-list-item-title>
+                  {{ item.nickname }}
+                </v-list-item-title>
               </template>
             </v-select>
             <div v-if="isLoggedIn" class="text-right caption mt-1">

@@ -6,7 +6,10 @@
     <v-card :loading="loading">
       <v-card-text>
         <v-row>
-          <v-col class="flex-grow-0 mr-4">
+          <v-col
+            class="flex-grow-0 mr-4 text-center"
+            :class="{ 'col-12': $vuetify.breakpoint.xsOnly }"
+          >
             <AvatarLoader :item="item" :entity-type="$entityType.user" />
           </v-col>
           <v-col>
@@ -56,7 +59,7 @@
           </v-col>
         </v-row>
         <v-row class="mt-5">
-          <v-col align="end">
+          <v-col :align="$vuetify.breakpoint.xsOnly ? 'center' : 'end'">
             <v-btn color="primary" @click="save">
               Сохранить
             </v-btn>
